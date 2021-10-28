@@ -43,7 +43,7 @@ if __name__ == "__main__":
 	try:
 		rospy.init_node("avoidance_node")
 		pub_topic_name = "/cmd_vel"
-		sub_topic_name = "/scan"
+		sub_topic_name = "/model/laser/scan"
 		pub = rospy.Publisher(pub_topic_name, Twist, queue_size = 10)
 		sub = rospy.Subscriber(sub_topic_name, LaserScan, callback)
 		rospy.sleep(10)
