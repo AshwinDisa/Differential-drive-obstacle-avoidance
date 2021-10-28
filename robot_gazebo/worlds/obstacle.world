@@ -30,8 +30,7 @@
         </constraints>
       </ode>
     </physics>
-
-    <!-- A turtlebot symbol -->
+    
     <include>
       <uri>model://obstacle</uri>
     </include>
