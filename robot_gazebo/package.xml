@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package>
+  
+  <name>robot_gazebo</name>
+  <version>0.0.0</version>
+  <description>robot_gazebo package</description>
+  <license>TODO</license>
+  <maintainer email="ashwin.disa@gmail.com">Ashwin Disa</maintainer>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>rospy</run_depend>
+  <build_depend>rospy</build_depend>
+  <run_depend>std_msgs</run_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend> 
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>rviz</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>xacro</build_depend>
+
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>rviz</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+
+  <export>
+  </export>
+
+</package>

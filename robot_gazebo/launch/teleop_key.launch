@@ -1,0 +1,10 @@
+<launch>
+
+  <arg name="model" default="$(find robot_gazebo)/urdf/model.xacro"/>
+
+  <param name="model" value="$(arg model)"/>
+
+  <node pkg="robot_gazebo" type="teleop_key" name="teleop_key"  output="screen">
+  </node>
+
+</launch>

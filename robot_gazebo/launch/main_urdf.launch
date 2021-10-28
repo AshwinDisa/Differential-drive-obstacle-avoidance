@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+	<!-- arguments passed to launch file -->
+	<arg name="world" default="empty"/>
+	<arg name="paused" default="true"/>
+	<arg name="use_sim_time" default="true"/>
+	<arg name="gui" default="true"/>
+	<arg name="headless" default="false"/>
+	<arg name="debug" default="false"/>
+
+	<!-- define model path -->
+	<env name="GAZEBO_MODEL_PATH" value="$(find model_description)/models:$(optenv GAZEBO_MODEL_PATH)"/>
+
+	<!-- logic to launch empty.world, only changing the name of the world to our world --> 
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(find robot_gazebo)/worlds/obstacle.world"/>
+		<arg name="paused" value="$(arg paused)"/>
+		<arg name="use_sim_time" value="$(arg use_sim_time)"/>
+		<arg name="gui" value="$(arg gui)"/>
+		<arg name="headless" value="$(arg headless)"/>
+		<arg name="debug" value="$(arg debug)"/>
+	</include>
+
+	<!-- Load the URDF into the ROS Parameter Server --> 
+ 	<param name="model_description" command="$(find xacro)/xacro $(find model_description)/urdf/model.xacro" />
+
+ 	<!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+	<node name="model_spawner" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param model_description -model model"/>
+
+</launch>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  
+  <name>model_description</name>
+  <version>0.0.0</version>
+  <description>model_description package</description>
+  <license>TODO</license>
+  <maintainer email="ashwin.disa@gmail.com">Ashwin Disa</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+
+</package>
