@@ -3,7 +3,7 @@ Create a catkin package and build it
 
 	$ mkdir -p catkin_ws/src
     $ cd catkin_ws/src
-    $ git clone
+    $ git clone https://github.com/AshwinDisa/Differential-drive-obstacle-avoidance.git
     $ cd ..
     $ catkin_make
   
