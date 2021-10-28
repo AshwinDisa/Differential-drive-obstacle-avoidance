@@ -1,4 +1,6 @@
 # Differential-drive-obstacle-avoidance
+
+![plot](.model_description/world.png)
 Create a catkin package and build it 
 
 	$ mkdir -p catkin_ws/src
