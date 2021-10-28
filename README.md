@@ -13,7 +13,7 @@ Source your workspace where you cloned the repository
 	
 Add source ~/(YOUR_WORKSPACE_NAME)/devel/setup.bash at the end of the text file and restart the terminal
 
-NOTE: Copy paste the /obstacle folder from /catkin_ws/src/robot_gazebo/worlds/gazebo to .ros/models
+IMPORTANT: Copy paste the /obstacle folder from /catkin_ws/src/robot_gazebo/worlds/gazebo to /.ros/models
 
 Load the model and world into the Simulator
 
