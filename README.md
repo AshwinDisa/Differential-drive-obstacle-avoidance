@@ -1,6 +1,7 @@
 # Differential-drive-obstacle-avoidance
 
-![plot](.model_description/world.png)
+![alt text](https://github.com/AshwinDisa/Differential-drive-obstacle-avoidance/blob/main/model_description/world?raw=true)
+
 Create a catkin package and build it 
 
 	$ mkdir -p catkin_ws/src
